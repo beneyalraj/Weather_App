@@ -7,10 +7,10 @@ const searchForm = document.querySelector("[data-searchForm]");
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
 
-//initially vairables need????
+
 
 let oldTab = userTab;
-const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
+const API_KEY = "a06e17df2bae26236556dd7e446d7cd9";
 oldTab.classList.add("current-tab");
 getfromSessionStorage();
 
@@ -93,7 +93,7 @@ function renderWeatherInfo(weatherInfo) {
 
     console.log(weatherInfo);
 
-    //fetch values from weatherINfo object and put it UI elements
+
     cityName.innerText = weatherInfo?.name;
     countryIcon.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
     desc.innerText = weatherInfo?.weather?.[0]?.description;
