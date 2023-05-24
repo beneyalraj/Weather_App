@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Weather App</title>
 </head>
 <body>
@@ -12,25 +15,25 @@
         <h1>Weather App</h1>
 
         <div class="tab-container">
-            <p class="tab" data-userWeather>Your Weather</p>
-            <p class="tab" data-searchWeather>Search Weather</p>
+            <p class="tab current-tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchweather>Search Weather</p>
         </div>
 
         <div class="weather-container">
 
             <!--Grant Location Access-->
 
-            <div class="grant-location-container">
+            <div class="sub-container grant-location-container active">
                 <img src="./assets/location.png" width="80px" height="80px" loading="lazy">
-                <p>grant Location Access</p>
+                <p>Grant Location Access</p>
                 <p>Allow Access to get weather Information</p>
-                <button class="btn" data-grantAccess>Grant Access</button>
+                <button class="btn" data-grantaccess>Grant Access</button>
             </div>
 
 
             <!--Search form-->
             <form class="form-container" data-searchform>
-                <input placeholder = "search for city" data-searchInput>
+                <input placeholder = "Search for city" data-searchinput>
                 <button class="btn" type="submit">
                     <img src="./assets/search.png" width="20" height="20" loading="lazy">
                 </button>
@@ -38,27 +41,27 @@
 
 
             <!--Loading Screen-->
-            <div class="loading-conatiner">
+            <div class="sub-container loading-container">
                 <img src="./assets/loading.gif" width="150" height="150">
                 <p>Loading</p>
             </div>
 
 
             <!--show weather info-->
-            <div class="user-info-conatiner">
+            <div class=" sub-container user-info-container">
                 
                 <!--city-name&flag-->
                 <div class="name">
-                    <p data-cityName></p>
-                    <img data-countryIcon>
+                    <p data-cityname></p>
+                    <img data-countryicon>
                 </div>
 
                 <!--weather desc-->
-                <p data-weatherDesc></p>
+                <p data-weatherdesc></p>
                 <!--weather icon-->
-                <img data-weatherIcon>
+                <img data-weathericon>
                 <!--temperature-->
-                <p data-temperature></p>
+                <p data-temp></p>
 
 
                 <!--3card_Parameter-->
